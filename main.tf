@@ -3,10 +3,10 @@ resource "null_resource" "fibonacci" {
     command = <<EOT
 python3 -c "
 def fibonacci(n):
-    a, b = 0, 1
-    while a <= n:
-        print(a, end=', ')
-        a, b = b, a + b
+  a, b = 0, 1
+  while a <= n:
+      print(a, end=', ')
+      a, b = b, a + b
 fibonacci(21)
 "
     EOT
